@@ -660,3 +660,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* page-title-center */
+.page-title {
+  text-align: center;
+  width: 100%;
+}
+.section > .container > .lead {
+  text-align: center;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
