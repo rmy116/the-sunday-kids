@@ -672,3 +672,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* carousel-center-fix */
+.hero-band-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero-band .cta-row {
+  justify-content: center;
+  width: 100%;
+}
+.project-carousel,
+.project-carousel-modest {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-self: center;
+  width: min(560px, 92vw);
+}
+.carousel-frame,
+.carousel-image {
+  margin-left: auto;
+  margin-right: auto;
+}
