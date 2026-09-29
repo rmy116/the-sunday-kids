@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="The Sunday Kids">
+  <defs>
+    <style>
+      .word { font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; font-weight: 800; fill: #1f2a32; letter-spacing: 0.04em; }
+      .sub { font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; font-weight: 600; fill: #2a9fc4; letter-spacing: 0.12em; }
+    </style>
+  </defs>
+  <!-- sun icon -->
+  <g transform="translate(48,80)">
+    <circle cx="0" cy="0" r="34" fill="#f6c445" stroke="#2ec4e6" stroke-width="5"/>
+    <g fill="#f6c445" stroke="#2ec4e6" stroke-width="4" stroke-linejoin="round">
+      <polygon points="0,-58 8,-40 -8,-40"/>
+      <polygon points="0,58 8,40 -8,40"/>
+      <polygon points="58,0 40,8 40,-8"/>
+      <polygon points="-58,0 -40,8 -40,-8"/>
+      <polygon points="41,-41 34,-26 26,-34"/>
+      <polygon points="-41,41 -34,26 -26,34"/>
+      <polygon points="41,41 26,34 34,26"/>
+      <polygon points="-41,-41 -26,-34 -34,-26"/>
+    </g>
+    <circle cx="-10" cy="-4" r="4.5" fill="#1f2a32"/>
+    <circle cx="10" cy="-4" r="4.5" fill="#1f2a32"/>
+    <path d="M-14,10 Q0,22 14,10" fill="none" stroke="#1f2a32" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text class="word" x="120" y="78" font-size="42">THE SUNDAY KIDS</text>
+  <text class="sub" x="122" y="112" font-size="16">FROM THE BEGINNING</text>
+</svg>
