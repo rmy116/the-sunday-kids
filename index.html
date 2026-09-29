@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Sunday Kids</title>
-  <meta name="description" content="Non-profit providing volunteer opportunities for young children." />
-  <link rel="icon" href="./assets/logo.png" type="image/png" />
+  <meta name="description" content="The Sunday Kids creates volunteer opportunities for young children and their families." />
+  <link rel="icon" href="./assets/logo-site.png" type="image/png" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -13,7 +13,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo logo-lockup" href="./">
-        <img src="./assets/logo-full.svg" alt="The Sunday Kids" height="52" />
+        <img class="site-logo" src="./assets/logo-site.png" alt="" width="64" height="64" />
+        <span class="logo-name">The Sunday Kids</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -30,12 +31,30 @@
 
     <section class="hero hero-band" aria-label="Welcome">
       <div class="container hero-band-inner">
-        <img class="logo-full" src="./assets/logo-full.svg" alt="The Sunday Kids" width="720" height="160" />
-        <p class="tagline">…from the beginning…</p>
-        <p class="hero-lede">Volunteer opportunities for young children — building a habit of helping others early.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="projects/">See our projects</a>
-          <a class="btn btn-secondary" href="get-involved/">Get involved</a>
+        <div class="hero-copy">
+          <div class="hero-lockup">
+            <img class="hero-logo" src="./assets/logo-site.png" alt="" width="300" height="300" />
+            <span class="hero-wordmark">THE SUNDAY KIDS</span>
+          </div>
+          <p class="hero-lede">Volunteer opportunities for young children — building a habit of helping others early.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="projects/">See our projects</a>
+            <a class="btn btn-secondary" href="get-involved/">Get involved</a>
+          </div>
+        </div>
+        <div class="project-carousel" data-carousel tabindex="0" aria-label="Photos from Sunday Kids projects">
+          <div class="carousel-frame">
+            <img class="carousel-image" data-carousel-image src="./assets/projects/beach-cleanup-1/01.jpg" alt="Beach Cleanup 1 — photo 01" width="1200" height="900" />
+            <div class="carousel-caption" aria-hidden="true">Making a difference together</div>
+          </div>
+          <div class="carousel-toolbar">
+            <p class="carousel-status" data-carousel-status aria-live="polite">Project photo 1 of 273</p>
+            <div class="carousel-controls" aria-label="Carousel controls">
+              <button class="carousel-button" type="button" data-carousel-prev aria-label="Show previous project photo">‹</button>
+              <button class="carousel-button" type="button" data-carousel-toggle aria-pressed="false" aria-label="Pause photo rotation">Pause</button>
+              <button class="carousel-button" type="button" data-carousel-next aria-label="Show next project photo">›</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -44,10 +63,6 @@
         <div class="mission-card">
           <h2>Mission</h2>
           <p>The Sunday Kids is a non-profit organization that provides volunteer opportunities for young children and promotes a life of volunteering from the beginning.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="projects/">See our projects</a>
-            <a class="btn btn-secondary" href="get-involved/">Get involved</a>
-          </div>
         </div>
       </div>
     </section>
@@ -56,7 +71,10 @@
   <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-brand">
-          <img class="footer-logo-full" src="./assets/logo-full.svg" alt="The Sunday Kids" height="48" />
+          <div class="footer-logo-lockup">
+            <img class="footer-logo" src="./assets/logo-site.png" alt="" width="60" height="60" />
+            <span>The Sunday Kids</span>
+          </div>
           <p>Volunteering from the beginning.</p>
         </div>
         <div class="footer-contact">
@@ -69,6 +87,335 @@
         </div>
       </div>
     </footer>
+  <script>
+    (function () {
+      var photos = [
+        {src: "./assets/projects/beach-cleanup-1/01.jpg", alt: "Beach Cleanup 1 \u2014 photo 01"},
+        {src: "./assets/projects/beach-cleanup-1/02.jpg", alt: "Beach Cleanup 1 \u2014 photo 02"},
+        {src: "./assets/projects/beach-cleanup-1/03.jpg", alt: "Beach Cleanup 1 \u2014 photo 03"},
+        {src: "./assets/projects/beach-cleanup-1/04.jpg", alt: "Beach Cleanup 1 \u2014 photo 04"},
+        {src: "./assets/projects/beach-cleanup-1/05.jpg", alt: "Beach Cleanup 1 \u2014 photo 05"},
+        {src: "./assets/projects/beach-cleanup-1/06.jpg", alt: "Beach Cleanup 1 \u2014 photo 06"},
+        {src: "./assets/projects/beach-cleanup-1/07.jpg", alt: "Beach Cleanup 1 \u2014 photo 07"},
+        {src: "./assets/projects/beach-cleanup-1/08.jpg", alt: "Beach Cleanup 1 \u2014 photo 08"},
+        {src: "./assets/projects/beach-cleanup-1/09.jpg", alt: "Beach Cleanup 1 \u2014 photo 09"},
+        {src: "./assets/projects/beach-cleanup-1/10.jpg", alt: "Beach Cleanup 1 \u2014 photo 10"},
+        {src: "./assets/projects/beach-cleanup-1/11.jpg", alt: "Beach Cleanup 1 \u2014 photo 11"},
+        {src: "./assets/projects/beach-cleanup-1/12.jpg", alt: "Beach Cleanup 1 \u2014 photo 12"},
+        {src: "./assets/projects/beach-cleanup-1/13.jpg", alt: "Beach Cleanup 1 \u2014 photo 13"},
+        {src: "./assets/projects/beach-cleanup-1/14.jpg", alt: "Beach Cleanup 1 \u2014 photo 14"},
+        {src: "./assets/projects/beach-cleanup-1/15.jpg", alt: "Beach Cleanup 1 \u2014 photo 15"},
+        {src: "./assets/projects/beach-cleanup-1/16.jpg", alt: "Beach Cleanup 1 \u2014 photo 16"},
+        {src: "./assets/projects/beach-cleanup-1/17.jpg", alt: "Beach Cleanup 1 \u2014 photo 17"},
+        {src: "./assets/projects/beach-cleanup-1/18.jpg", alt: "Beach Cleanup 1 \u2014 photo 18"},
+        {src: "./assets/projects/beach-cleanup-1/19.jpg", alt: "Beach Cleanup 1 \u2014 photo 19"},
+        {src: "./assets/projects/beach-cleanup-1/20.jpg", alt: "Beach Cleanup 1 \u2014 photo 20"},
+        {src: "./assets/projects/beach-cleanup-1/21.jpg", alt: "Beach Cleanup 1 \u2014 photo 21"},
+        {src: "./assets/projects/beach-cleanup-august-2025/01.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 01"},
+        {src: "./assets/projects/beach-cleanup-august-2025/02.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 02"},
+        {src: "./assets/projects/beach-cleanup-august-2025/03.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 03"},
+        {src: "./assets/projects/beach-cleanup-august-2025/04.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 04"},
+        {src: "./assets/projects/beach-cleanup-august-2025/05.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 05"},
+        {src: "./assets/projects/beach-cleanup-august-2025/06.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 06"},
+        {src: "./assets/projects/beach-cleanup-august-2025/07.jpg", alt: "Beach Cleanup August 2025 \u2014 photo 07"},
+        {src: "./assets/projects/beach-cleanup-newport/01.jpg", alt: "Beach Cleanup Newport \u2014 photo 01"},
+        {src: "./assets/projects/beach-cleanup-newport/02.jpg", alt: "Beach Cleanup Newport \u2014 photo 02"},
+        {src: "./assets/projects/beach-cleanup-newport/03.jpg", alt: "Beach Cleanup Newport \u2014 photo 03"},
+        {src: "./assets/projects/beach-cleanup-newport/04.jpg", alt: "Beach Cleanup Newport \u2014 photo 04"},
+        {src: "./assets/projects/beach-cleanup-newport/05.jpg", alt: "Beach Cleanup Newport \u2014 photo 05"},
+        {src: "./assets/projects/beach-cleanup-newport/06.jpg", alt: "Beach Cleanup Newport \u2014 photo 06"},
+        {src: "./assets/projects/beach-cleanup-newport/07.jpg", alt: "Beach Cleanup Newport \u2014 photo 07"},
+        {src: "./assets/projects/beach-cleanup-newport/08.jpg", alt: "Beach Cleanup Newport \u2014 photo 08"},
+        {src: "./assets/projects/beach-cleanup-newport/09.jpg", alt: "Beach Cleanup Newport \u2014 photo 09"},
+        {src: "./assets/projects/beach-cleanup-newport/10.jpg", alt: "Beach Cleanup Newport \u2014 photo 10"},
+        {src: "./assets/projects/beach-cleanup-newport/11.jpg", alt: "Beach Cleanup Newport \u2014 photo 11"},
+        {src: "./assets/projects/community-outreach/01.jpg", alt: "Community Outreach \u2014 photo 01"},
+        {src: "./assets/projects/community-outreach/02.jpg", alt: "Community Outreach \u2014 photo 02"},
+        {src: "./assets/projects/community-outreach/03.jpg", alt: "Community Outreach \u2014 photo 03"},
+        {src: "./assets/projects/daylesford-crossing/01.jpg", alt: "Daylesford Crossing \u2014 photo 01"},
+        {src: "./assets/projects/daylesford-crossing/02.jpg", alt: "Daylesford Crossing \u2014 photo 02"},
+        {src: "./assets/projects/daylesford-crossing/03.jpg", alt: "Daylesford Crossing \u2014 photo 03"},
+        {src: "./assets/projects/daylesford-crossing/04.jpg", alt: "Daylesford Crossing \u2014 photo 04"},
+        {src: "./assets/projects/daylesford-crossing/05.jpg", alt: "Daylesford Crossing \u2014 photo 05"},
+        {src: "./assets/projects/daylesford-crossing/06.jpg", alt: "Daylesford Crossing \u2014 photo 06"},
+        {src: "./assets/projects/daylesford-crossing/07.jpg", alt: "Daylesford Crossing \u2014 photo 07"},
+        {src: "./assets/projects/daylesford-crossing/08.jpg", alt: "Daylesford Crossing \u2014 photo 08"},
+        {src: "./assets/projects/daylesford-crossing/09.jpg", alt: "Daylesford Crossing \u2014 photo 09"},
+        {src: "./assets/projects/daylesford-crossing/10.jpg", alt: "Daylesford Crossing \u2014 photo 10"},
+        {src: "./assets/projects/daylesford-crossing/11.jpg", alt: "Daylesford Crossing \u2014 photo 11"},
+        {src: "./assets/projects/daylesford-crossing/12.jpg", alt: "Daylesford Crossing \u2014 photo 12"},
+        {src: "./assets/projects/daylesford-crossing/13.jpg", alt: "Daylesford Crossing \u2014 photo 13"},
+        {src: "./assets/projects/daylesford-crossing/14.jpg", alt: "Daylesford Crossing \u2014 photo 14"},
+        {src: "./assets/projects/daylesford-crossing/15.jpg", alt: "Daylesford Crossing \u2014 photo 15"},
+        {src: "./assets/projects/daylesford-crossing/16.jpg", alt: "Daylesford Crossing \u2014 photo 16"},
+        {src: "./assets/projects/daylesford-crossing/17.jpg", alt: "Daylesford Crossing \u2014 photo 17"},
+        {src: "./assets/projects/daylesford-crossing/18.jpg", alt: "Daylesford Crossing \u2014 photo 18"},
+        {src: "./assets/projects/daylesford-crossing/19.jpg", alt: "Daylesford Crossing \u2014 photo 19"},
+        {src: "./assets/projects/daylesford-crossing/20.jpg", alt: "Daylesford Crossing \u2014 photo 20"},
+        {src: "./assets/projects/daylesford-crossing/21.jpg", alt: "Daylesford Crossing \u2014 photo 21"},
+        {src: "./assets/projects/daylesford-crossing/22.jpg", alt: "Daylesford Crossing \u2014 photo 22"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/01.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 01"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/02.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 02"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/03.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 03"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/04.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 04"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/05.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 05"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/06.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 06"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/07.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 07"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/08.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 08"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/09.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 09"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/10.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 10"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/11.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 11"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/12.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 12"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/13.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 13"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/14.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 14"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/15.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 15"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/16.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 16"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/17.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 17"},
+        {src: "./assets/projects/dog-adoption-bags-priceless-pets/18.jpg", alt: "Dog Adoption Bags Priceless Pets \u2014 photo 18"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/01.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 01"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/02.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 02"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/03.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 03"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/04.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 04"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/05.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 05"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/06.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 06"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/07.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 07"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/08.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 08"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/09.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 09"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/10.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 10"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/11.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 11"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/12.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 12"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/13.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 13"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/14.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 14"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/15.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 15"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/16.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 16"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/17.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 17"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/18.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 18"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/19.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 19"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/20.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 20"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/21.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 21"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/22.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 22"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/23.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 23"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/24.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 24"},
+        {src: "./assets/projects/dog-adoption-boxes-all-4-paws/25.jpg", alt: "Dog Adoption Boxes All 4 Paws \u2014 photo 25"},
+        {src: "./assets/projects/first-responder-appreciation/01.jpg", alt: "First Responder Appreciation \u2014 photo 01"},
+        {src: "./assets/projects/first-responder-appreciation/02.jpg", alt: "First Responder Appreciation \u2014 photo 02"},
+        {src: "./assets/projects/first-responder-appreciation/03.jpg", alt: "First Responder Appreciation \u2014 photo 03"},
+        {src: "./assets/projects/first-responder-appreciation/04.jpg", alt: "First Responder Appreciation \u2014 photo 04"},
+        {src: "./assets/projects/first-responder-appreciation/05.jpg", alt: "First Responder Appreciation \u2014 photo 05"},
+        {src: "./assets/projects/first-responder-appreciation/06.jpg", alt: "First Responder Appreciation \u2014 photo 06"},
+        {src: "./assets/projects/first-responder-appreciation/07.jpg", alt: "First Responder Appreciation \u2014 photo 07"},
+        {src: "./assets/projects/first-responder-appreciation/08.jpg", alt: "First Responder Appreciation \u2014 photo 08"},
+        {src: "./assets/projects/first-responder-appreciation/09.jpg", alt: "First Responder Appreciation \u2014 photo 09"},
+        {src: "./assets/projects/first-responder-appreciation/10.jpg", alt: "First Responder Appreciation \u2014 photo 10"},
+        {src: "./assets/projects/first-responder-appreciation/11.jpg", alt: "First Responder Appreciation \u2014 photo 11"},
+        {src: "./assets/projects/first-responder-appreciation/12.jpg", alt: "First Responder Appreciation \u2014 photo 12"},
+        {src: "./assets/projects/first-responder-appreciation/13.jpg", alt: "First Responder Appreciation \u2014 photo 13"},
+        {src: "./assets/projects/first-responder-appreciation/14.jpg", alt: "First Responder Appreciation \u2014 photo 14"},
+        {src: "./assets/projects/first-responder-appreciation/15.jpg", alt: "First Responder Appreciation \u2014 photo 15"},
+        {src: "./assets/projects/first-responder-appreciation/16.jpg", alt: "First Responder Appreciation \u2014 photo 16"},
+        {src: "./assets/projects/first-responder-appreciation/17.jpg", alt: "First Responder Appreciation \u2014 photo 17"},
+        {src: "./assets/projects/first-responder-appreciation/18.jpg", alt: "First Responder Appreciation \u2014 photo 18"},
+        {src: "./assets/projects/first-responder-appreciation/19.jpg", alt: "First Responder Appreciation \u2014 photo 19"},
+        {src: "./assets/projects/food-drive-project-hope-2024/01.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 01"},
+        {src: "./assets/projects/food-drive-project-hope-2024/02.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 02"},
+        {src: "./assets/projects/food-drive-project-hope-2024/03.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 03"},
+        {src: "./assets/projects/food-drive-project-hope-2024/04.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 04"},
+        {src: "./assets/projects/food-drive-project-hope-2024/05.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 05"},
+        {src: "./assets/projects/food-drive-project-hope-2024/06.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 06"},
+        {src: "./assets/projects/food-drive-project-hope-2024/07.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 07"},
+        {src: "./assets/projects/food-drive-project-hope-2024/08.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 08"},
+        {src: "./assets/projects/food-drive-project-hope-2024/09.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 09"},
+        {src: "./assets/projects/food-drive-project-hope-2024/10.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 10"},
+        {src: "./assets/projects/food-drive-project-hope-2024/11.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 11"},
+        {src: "./assets/projects/food-drive-project-hope-2024/12.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 12"},
+        {src: "./assets/projects/food-drive-project-hope-2024/13.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 13"},
+        {src: "./assets/projects/food-drive-project-hope-2024/14.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 14"},
+        {src: "./assets/projects/food-drive-project-hope-2024/15.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 15"},
+        {src: "./assets/projects/food-drive-project-hope-2024/16.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 16"},
+        {src: "./assets/projects/food-drive-project-hope-2024/17.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 17"},
+        {src: "./assets/projects/food-drive-project-hope-2024/18.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 18"},
+        {src: "./assets/projects/food-drive-project-hope-2024/19.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 19"},
+        {src: "./assets/projects/food-drive-project-hope-2024/20.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 20"},
+        {src: "./assets/projects/food-drive-project-hope-2024/21.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 21"},
+        {src: "./assets/projects/food-drive-project-hope-2024/22.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 22"},
+        {src: "./assets/projects/food-drive-project-hope-2024/23.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 23"},
+        {src: "./assets/projects/food-drive-project-hope-2024/24.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 24"},
+        {src: "./assets/projects/food-drive-project-hope-2024/25.jpg", alt: "Food Drive Project Hope 2024 \u2014 photo 25"},
+        {src: "./assets/projects/food-drive-project-hope-2025/01.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 01"},
+        {src: "./assets/projects/food-drive-project-hope-2025/02.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 02"},
+        {src: "./assets/projects/food-drive-project-hope-2025/03.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 03"},
+        {src: "./assets/projects/food-drive-project-hope-2025/04.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 04"},
+        {src: "./assets/projects/food-drive-project-hope-2025/05.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 05"},
+        {src: "./assets/projects/food-drive-project-hope-2025/06.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 06"},
+        {src: "./assets/projects/food-drive-project-hope-2025/07.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 07"},
+        {src: "./assets/projects/food-drive-project-hope-2025/08.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 08"},
+        {src: "./assets/projects/food-drive-project-hope-2025/09.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 09"},
+        {src: "./assets/projects/food-drive-project-hope-2025/10.jpg", alt: "Food Drive Project Hope 2025 \u2014 photo 10"},
+        {src: "./assets/projects/giving-support-and-thanks/01.jpg", alt: "Giving Support And Thanks \u2014 photo 01"},
+        {src: "./assets/projects/giving-support-and-thanks/02.jpg", alt: "Giving Support And Thanks \u2014 photo 02"},
+        {src: "./assets/projects/giving-support-and-thanks/03.jpg", alt: "Giving Support And Thanks \u2014 photo 03"},
+        {src: "./assets/projects/giving-support-and-thanks/04.jpg", alt: "Giving Support And Thanks \u2014 photo 04"},
+        {src: "./assets/projects/giving-support-and-thanks/05.jpg", alt: "Giving Support And Thanks \u2014 photo 05"},
+        {src: "./assets/projects/giving-support-and-thanks/06.jpg", alt: "Giving Support And Thanks \u2014 photo 06"},
+        {src: "./assets/projects/greentree-park/01.jpg", alt: "Greentree Park \u2014 photo 01"},
+        {src: "./assets/projects/greentree-park/02.jpg", alt: "Greentree Park \u2014 photo 02"},
+        {src: "./assets/projects/greentree-park/03.jpg", alt: "Greentree Park \u2014 photo 03"},
+        {src: "./assets/projects/greentree-park/04.jpg", alt: "Greentree Park \u2014 photo 04"},
+        {src: "./assets/projects/greentree-park/05.jpg", alt: "Greentree Park \u2014 photo 05"},
+        {src: "./assets/projects/greentree-park/06.jpg", alt: "Greentree Park \u2014 photo 06"},
+        {src: "./assets/projects/greentree-park/07.jpg", alt: "Greentree Park \u2014 photo 07"},
+        {src: "./assets/projects/greentree-park/08.jpg", alt: "Greentree Park \u2014 photo 08"},
+        {src: "./assets/projects/greentree-park/09.jpg", alt: "Greentree Park \u2014 photo 09"},
+        {src: "./assets/projects/greentree-park/10.jpg", alt: "Greentree Park \u2014 photo 10"},
+        {src: "./assets/projects/greentree-park/11.jpg", alt: "Greentree Park \u2014 photo 11"},
+        {src: "./assets/projects/greentree-park/12.jpg", alt: "Greentree Park \u2014 photo 12"},
+        {src: "./assets/projects/greentree-park/13.jpg", alt: "Greentree Park \u2014 photo 13"},
+        {src: "./assets/projects/greentree-park/14.jpg", alt: "Greentree Park \u2014 photo 14"},
+        {src: "./assets/projects/greentree-park/15.jpg", alt: "Greentree Park \u2014 photo 15"},
+        {src: "./assets/projects/greentree-park/16.jpg", alt: "Greentree Park \u2014 photo 16"},
+        {src: "./assets/projects/healthcare-worker-appreciation/01.jpg", alt: "Healthcare Worker Appreciation \u2014 photo 01"},
+        {src: "./assets/projects/healthcare-worker-appreciation/02.jpg", alt: "Healthcare Worker Appreciation \u2014 photo 02"},
+        {src: "./assets/projects/kits-for-a-cause/01.jpg", alt: "Kits For A Cause \u2014 photo 01"},
+        {src: "./assets/projects/kits-for-a-cause/02.jpg", alt: "Kits For A Cause \u2014 photo 02"},
+        {src: "./assets/projects/kits-for-a-cause/03.jpg", alt: "Kits For A Cause \u2014 photo 03"},
+        {src: "./assets/projects/kits-for-a-cause/04.jpg", alt: "Kits For A Cause \u2014 photo 04"},
+        {src: "./assets/projects/kits-for-a-cause/05.jpg", alt: "Kits For A Cause \u2014 photo 05"},
+        {src: "./assets/projects/kits-for-a-cause/06.jpg", alt: "Kits For A Cause \u2014 photo 06"},
+        {src: "./assets/projects/kits-for-a-cause/07.jpg", alt: "Kits For A Cause \u2014 photo 07"},
+        {src: "./assets/projects/kits-for-a-cause/08.jpg", alt: "Kits For A Cause \u2014 photo 08"},
+        {src: "./assets/projects/kits-for-a-cause/09.jpg", alt: "Kits For A Cause \u2014 photo 09"},
+        {src: "./assets/projects/kits-for-a-cause/10.jpg", alt: "Kits For A Cause \u2014 photo 10"},
+        {src: "./assets/projects/kits-for-a-cause/11.jpg", alt: "Kits For A Cause \u2014 photo 11"},
+        {src: "./assets/projects/kits-for-a-cause/12.jpg", alt: "Kits For A Cause \u2014 photo 12"},
+        {src: "./assets/projects/kits-for-a-cause/13.jpg", alt: "Kits For A Cause \u2014 photo 13"},
+        {src: "./assets/projects/kits-for-a-cause/14.jpg", alt: "Kits For A Cause \u2014 photo 14"},
+        {src: "./assets/projects/kits-for-a-cause/15.jpg", alt: "Kits For A Cause \u2014 photo 15"},
+        {src: "./assets/projects/maui-bracelet-sale/01.jpg", alt: "Maui Bracelet Sale \u2014 photo 01"},
+        {src: "./assets/projects/maui-bracelet-sale/02.jpg", alt: "Maui Bracelet Sale \u2014 photo 02"},
+        {src: "./assets/projects/maui-bracelet-sale/03.jpg", alt: "Maui Bracelet Sale \u2014 photo 03"},
+        {src: "./assets/projects/maui-bracelet-sale/04.jpg", alt: "Maui Bracelet Sale \u2014 photo 04"},
+        {src: "./assets/projects/maui-bracelet-sale/05.jpg", alt: "Maui Bracelet Sale \u2014 photo 05"},
+        {src: "./assets/projects/maui-bracelet-sale/06.jpg", alt: "Maui Bracelet Sale \u2014 photo 06"},
+        {src: "./assets/projects/maui-bracelet-sale/07.jpg", alt: "Maui Bracelet Sale \u2014 photo 07"},
+        {src: "./assets/projects/maui-bracelet-sale/08.jpg", alt: "Maui Bracelet Sale \u2014 photo 08"},
+        {src: "./assets/projects/maui-bracelet-sale/09.jpg", alt: "Maui Bracelet Sale \u2014 photo 09"},
+        {src: "./assets/projects/maui-bracelet-sale/10.jpg", alt: "Maui Bracelet Sale \u2014 photo 10"},
+        {src: "./assets/projects/maui-bracelet-sale/11.jpg", alt: "Maui Bracelet Sale \u2014 photo 11"},
+        {src: "./assets/projects/maui-bracelet-sale/12.jpg", alt: "Maui Bracelet Sale \u2014 photo 12"},
+        {src: "./assets/projects/maui-bracelet-sale/13.jpg", alt: "Maui Bracelet Sale \u2014 photo 13"},
+        {src: "./assets/projects/maui-bracelet-sale/14.jpg", alt: "Maui Bracelet Sale \u2014 photo 14"},
+        {src: "./assets/projects/maui-bracelet-sale/15.jpg", alt: "Maui Bracelet Sale \u2014 photo 15"},
+        {src: "./assets/projects/maui-bracelet-sale/16.jpg", alt: "Maui Bracelet Sale \u2014 photo 16"},
+        {src: "./assets/projects/maui-bracelet-sale/17.jpg", alt: "Maui Bracelet Sale \u2014 photo 17"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/01.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 01"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/02.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 02"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/03.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 03"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/04.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 04"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/05.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 05"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/06.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 06"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/07.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 07"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/08.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 08"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/09.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 09"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/10.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 10"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/11.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 11"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/12.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 12"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/13.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 13"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/14.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 14"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/15.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 15"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/16.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 16"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/17.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 17"},
+        {src: "./assets/projects/nourish-every-child-lemonade-bracelet-sale/18.jpg", alt: "Nourish Every Child Lemonade Bracelet Sale \u2014 photo 18"},
+        {src: "./assets/projects/ocean-city-cleanup/01.jpg", alt: "Ocean City Cleanup \u2014 photo 01"},
+        {src: "./assets/projects/ocean-city-cleanup/02.jpg", alt: "Ocean City Cleanup \u2014 photo 02"},
+        {src: "./assets/projects/ocean-city-cleanup/03.jpg", alt: "Ocean City Cleanup \u2014 photo 03"},
+        {src: "./assets/projects/ocean-city-cleanup/04.jpg", alt: "Ocean City Cleanup \u2014 photo 04"},
+        {src: "./assets/projects/ocean-city-cleanup/05.jpg", alt: "Ocean City Cleanup \u2014 photo 05"},
+        {src: "./assets/projects/ocean-city-cleanup/06.jpg", alt: "Ocean City Cleanup \u2014 photo 06"},
+        {src: "./assets/projects/ocean-city-cleanup/07.jpg", alt: "Ocean City Cleanup \u2014 photo 07"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/01.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 01"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/02.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 02"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/03.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 03"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/04.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 04"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/05.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 05"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/06.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 06"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/07.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 07"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/08.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 08"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/09.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 09"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/10.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 10"},
+        {src: "./assets/projects/thomas-tough-bracelet-lemonade-sale/11.jpg", alt: "Thomas Tough Bracelet Lemonade Sale \u2014 photo 11"},
+        {src: "./assets/projects/thon-lemonade-stand/01.jpg", alt: "Thon Lemonade Stand \u2014 photo 01"},
+        {src: "./assets/projects/thon-lemonade-stand/02.jpg", alt: "Thon Lemonade Stand \u2014 photo 02"},
+        {src: "./assets/projects/thon-lemonade-stand/03.png", alt: "Thon Lemonade Stand \u2014 photo 03"},
+        {src: "./assets/projects/thon-lemonade-stand/04.jpg", alt: "Thon Lemonade Stand \u2014 photo 04"},
+        {src: "./assets/projects/thon-lemonade-stand/05.jpg", alt: "Thon Lemonade Stand \u2014 photo 05"},
+        {src: "./assets/projects/thon-lemonade-stand/06.jpg", alt: "Thon Lemonade Stand \u2014 photo 06"},
+        {src: "./assets/projects/thon-lemonade-stand/07.jpg", alt: "Thon Lemonade Stand \u2014 photo 07"},
+        {src: "./assets/projects/thon-lemonade-stand/08.jpg", alt: "Thon Lemonade Stand \u2014 photo 08"},
+        {src: "./assets/projects/thon-lemonade-stand/09.jpg", alt: "Thon Lemonade Stand \u2014 photo 09"},
+        {src: "./assets/projects/thon-lemonade-stand/10.jpg", alt: "Thon Lemonade Stand \u2014 photo 10"},
+        {src: "./assets/projects/thon-lemonade-stand/11.jpg", alt: "Thon Lemonade Stand \u2014 photo 11"},
+        {src: "./assets/projects/thon-lemonade-stand-2/01.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 01"},
+        {src: "./assets/projects/thon-lemonade-stand-2/02.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 02"},
+        {src: "./assets/projects/thon-lemonade-stand-2/03.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 03"},
+        {src: "./assets/projects/thon-lemonade-stand-2/04.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 04"},
+        {src: "./assets/projects/thon-lemonade-stand-2/05.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 05"},
+        {src: "./assets/projects/thon-lemonade-stand-2/06.jpg", alt: "Thon Lemonade Stand 2 \u2014 photo 06"},
+        {src: "./assets/projects/waymakers-holiday-stockings/01.jpg", alt: "Waymakers Holiday Stockings \u2014 photo 01"},
+        {src: "./assets/projects/waymakers-holiday-stockings/02.jpg", alt: "Waymakers Holiday Stockings \u2014 photo 02"},
+        {src: "./assets/projects/waymakers-holiday-stockings/03.jpg", alt: "Waymakers Holiday Stockings \u2014 photo 03"},
+      ];
+      var carousel = document.querySelector('[data-carousel]');
+      if (!carousel) return;
+      var image = carousel.querySelector('[data-carousel-image]');
+      var status = carousel.querySelector('[data-carousel-status]');
+      var prev = carousel.querySelector('[data-carousel-prev]');
+      var next = carousel.querySelector('[data-carousel-next]');
+      var toggle = carousel.querySelector('[data-carousel-toggle]');
+      var index = 0;
+      var timer = null;
+      var manuallyPaused = false;
+      var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function render(nextIndex) {
+        index = (nextIndex + photos.length) % photos.length;
+        image.classList.add('is-changing');
+        window.setTimeout(function () {
+          image.src = photos[index].src;
+          image.alt = photos[index].alt;
+          image.classList.remove('is-changing');
+        }, 180);
+        status.textContent = 'Project photo ' + (index + 1) + ' of ' + photos.length;
+      }
+      function stop() {
+        if (timer) { window.clearInterval(timer); timer = null; }
+      }
+      function start() {
+        stop();
+        if (!manuallyPaused && !reducedMotion) timer = window.setInterval(function () { render(index + 1); }, 5000);
+      }
+      function setPaused(paused) {
+        manuallyPaused = paused;
+        toggle.setAttribute('aria-pressed', String(paused));
+        toggle.textContent = paused ? 'Play' : 'Pause';
+        toggle.setAttribute('aria-label', paused ? 'Resume photo rotation' : 'Pause photo rotation');
+        if (paused) stop(); else start();
+      }
+      prev.addEventListener('click', function () { render(index - 1); });
+      next.addEventListener('click', function () { render(index + 1); });
+      toggle.addEventListener('click', function () { setPaused(!manuallyPaused); });
+      carousel.addEventListener('mouseenter', stop);
+      carousel.addEventListener('mouseleave', start);
+      carousel.addEventListener('focusin', stop);
+      carousel.addEventListener('focusout', function (event) {
+        if (!carousel.contains(event.relatedTarget)) start();
+      });
+      carousel.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') { event.preventDefault(); render(index - 1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); render(index + 1); }
+      });
+      start();
+    }());
+  </script>
   <script>
     (function () {
       var btn = document.querySelector('.nav-toggle');
