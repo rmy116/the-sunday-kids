@@ -737,3 +737,28 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Get Involved: equal Join / Follow buttons on a shared baseline */
+.involve-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.involve-card > p:not(.involve-action) {
+  flex: 1 0 auto;
+}
+.involve-card > .involve-action {
+  flex: 0 0 auto;
+  margin: auto 0 0;
+  padding-top: 1.25rem;
+}
+.involve-card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.25rem;
+  box-sizing: border-box;
+  text-align: center;
+  text-wrap: balance;
+}
