@@ -6,6 +6,9 @@
   <title>The Sunday Kids</title>
   <meta name="description" content="The Sunday Kids creates volunteer opportunities for young children and their families." />
   <link rel="icon" href="./assets/logo-sun-favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -30,7 +33,7 @@
 
     <section class="hero hero-band" aria-label="Welcome">
       <div class="container hero-band-inner">
-        <p class="hero-lede">Volunteer opportunities for young children — building a habit of helping others early.</p>
+        <p class="hero-lede">Volunteering from the beginning</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="projects/">See our projects</a>
           <a class="btn btn-secondary" href="get-involved/">Get involved</a>
@@ -38,15 +41,6 @@
         <div class="project-carousel project-carousel-modest" data-carousel tabindex="0" aria-label="Photos from Sunday Kids projects">
           <div class="carousel-frame">
             <img class="carousel-image" data-carousel-image src="./assets/projects/beach-cleanup-1/01.jpg" alt="Beach Cleanup 1 — photo 01" width="800" height="600" />
-            <div class="carousel-caption" aria-hidden="true">Making a difference together</div>
-          </div>
-          <div class="carousel-toolbar">
-            <p class="carousel-status" data-carousel-status aria-live="polite">Project photo 1 of 273</p>
-            <div class="carousel-controls" aria-label="Carousel controls">
-              <button class="carousel-button" type="button" data-carousel-prev aria-label="Show previous project photo">‹</button>
-              <button class="carousel-button" type="button" data-carousel-toggle aria-pressed="false" aria-label="Pause photo rotation">Pause</button>
-              <button class="carousel-button" type="button" data-carousel-next aria-label="Show next project photo">›</button>
-            </div>
           </div>
         </div>
       </div>
@@ -65,9 +59,8 @@
       <div class="container footer-inner">
         <div class="footer-brand">
           <div class="footer-logo-lockup">
-            <img class="footer-logo" src="./assets/logo-header.png" alt="The Sunday Kids" width="160" height="126" />
+            <img class="footer-logo" src="./assets/logo-options/option-c.png" alt="The Sunday Kids" width="1046" height="826" />
           </div>
-          <p>Volunteering from the beginning.</p>
         </div>
         <div class="footer-contact">
           <p><a href="mailto:info@thesundaykids.com">Email: info@thesundaykids.com</a></p>
@@ -359,13 +352,8 @@
       var carousel = document.querySelector('[data-carousel]');
       if (!carousel) return;
       var image = carousel.querySelector('[data-carousel-image]');
-      var status = carousel.querySelector('[data-carousel-status]');
-      var prev = carousel.querySelector('[data-carousel-prev]');
-      var next = carousel.querySelector('[data-carousel-next]');
-      var toggle = carousel.querySelector('[data-carousel-toggle]');
       var index = 0;
       var timer = null;
-      var manuallyPaused = false;
       var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       function render(nextIndex) {
@@ -376,34 +364,19 @@
           image.alt = photos[index].alt;
           image.classList.remove('is-changing');
         }, 180);
-        status.textContent = 'Project photo ' + (index + 1) + ' of ' + photos.length;
       }
       function stop() {
         if (timer) { window.clearInterval(timer); timer = null; }
       }
       function start() {
         stop();
-        if (!manuallyPaused && !reducedMotion) timer = window.setInterval(function () { render(index + 1); }, 5000);
+        if (!reducedMotion) timer = window.setInterval(function () { render(index + 1); }, 5000);
       }
-      function setPaused(paused) {
-        manuallyPaused = paused;
-        toggle.setAttribute('aria-pressed', String(paused));
-        toggle.textContent = paused ? 'Play' : 'Pause';
-        toggle.setAttribute('aria-label', paused ? 'Resume photo rotation' : 'Pause photo rotation');
-        if (paused) stop(); else start();
-      }
-      prev.addEventListener('click', function () { render(index - 1); });
-      next.addEventListener('click', function () { render(index + 1); });
-      toggle.addEventListener('click', function () { setPaused(!manuallyPaused); });
       carousel.addEventListener('mouseenter', stop);
       carousel.addEventListener('mouseleave', start);
       carousel.addEventListener('focusin', stop);
       carousel.addEventListener('focusout', function (event) {
         if (!carousel.contains(event.relatedTarget)) start();
-      });
-      carousel.addEventListener('keydown', function (event) {
-        if (event.key === 'ArrowLeft') { event.preventDefault(); render(index - 1); }
-        if (event.key === 'ArrowRight') { event.preventDefault(); render(index + 1); }
       });
       start();
     }());

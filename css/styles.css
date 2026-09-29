@@ -575,3 +575,52 @@ a:focus-visible, button:focus-visible {
 .hero-band .hero-lede {
   margin-top: 0;
 }
+
+
+/* Friendly, high-contrast refresh */
+:root {
+  --font: "Nunito", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Fredoka", "Nunito", sans-serif;
+  --deep-teal: #0b5663;
+}
+
+body { font-family: var(--font); }
+h1, h2, h3, h4, h5, h6, .site-nav a, .btn {
+  font-family: var(--heading-font);
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+  font-weight: 600;
+}
+.site-nav a { font-weight: 500; }
+
+/* Give section labels and titles a more substantial, kid-friendly hierarchy. */
+.kicker {
+  margin-bottom: 0.55rem;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+}
+.page-title {
+  font-size: clamp(2.55rem, 6vw, 4rem);
+  line-height: 1.08;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer {
+  background: var(--deep-teal);
+}
+.footer-logo-lockup img,
+.footer-logo {
+  height: 52px !important;
+  max-width: 96px;
+}
+
+/* Controls are intentionally absent; the carousel pauses on hover/focus. */
+.carousel-toolbar,
+.carousel-caption { display: none; }
+
+@media (max-width: 760px) {
+  .page-title { font-size: clamp(2.35rem, 11vw, 3.2rem); }
+  .footer-logo-lockup img,
+  .footer-logo { height: 46px !important; }
+}
