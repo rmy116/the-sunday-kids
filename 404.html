@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found · The Sunday Kids</title>
+  <meta name="description" content="The Sunday Kids — volunteer opportunities for young children." />
+  <link rel="icon" href="./assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./">
+        <img src="./assets/logo.png" alt="The Sunday Kids sun logo" width="56" height="56" />
+        <span>The Sunday Kids</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="./" aria-current="page">Home</a>
+          <a href="./about/">About Us</a>
+          <a href="./projects/">Projects</a>
+          <a href="./get-involved/">Get Involved</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="section">
+      <div class="container" style="text-align:center">
+        <h1 class="page-title">Page not found</h1>
+        <p class="lead" style="margin-inline:auto">That link may be from the old site. Try the projects list or home page.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="./">Home</a>
+          <a class="btn btn-secondary" href="projects/">Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/logo.png" alt="" width="48" height="48" />
+          <div>
+            <strong>The Sunday Kids</strong>
+            <p>Volunteering from the beginning.</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@thesundaykids.com">Email: info@thesundaykids.com</a></p>
+          <p class="social">
+            <a href="https://www.facebook.com/The-Sunday-Kids-295569818033663/" rel="noopener noreferrer" target="_blank">Facebook</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.instagram.com/thesundaykids/" rel="noopener noreferrer" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+      });
+    })();
+  </script>
+</body>
+</html>

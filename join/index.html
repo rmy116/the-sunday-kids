@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Us · The Sunday Kids</title>
+  <meta name="description" content="Email The Sunday Kids to join — no form required." />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../">
+        <img src="../assets/logo.png" alt="The Sunday Kids sun logo" width="56" height="56" />
+        <span>The Sunday Kids</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../about/">About Us</a>
+          <a href="../projects/">Projects</a>
+          <a href="../get-involved/" aria-current="page">Get Involved</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="section">
+      <div class="container" style="max-width:640px">
+        <p class="kicker">Join Us</p>
+        <h1 class="page-title">We’d love to meet you</h1>
+        <div class="card">
+          <p>We welcome members of all ages. There are no age or hour requirements — just a desire to help.</p>
+          <p>Send us a note and we’ll get back to you about upcoming projects.</p>
+          <p style="margin-top:1.5rem">
+            <a class="btn btn-primary" href="mailto:info@thesundaykids.com?subject=Join%20The%20Sunday%20Kids">Email info@thesundaykids.com</a>
+          </p>
+        </div>
+        <p style="margin-top:1.5rem"><a href="../get-involved/">← Back to Get Involved</a></p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="../assets/logo.png" alt="" width="48" height="48" />
+          <div>
+            <strong>The Sunday Kids</strong>
+            <p>Volunteering from the beginning.</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@thesundaykids.com">Email: info@thesundaykids.com</a></p>
+          <p class="social">
+            <a href="https://www.facebook.com/The-Sunday-Kids-295569818033663/" rel="noopener noreferrer" target="_blank">Facebook</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.instagram.com/thesundaykids/" rel="noopener noreferrer" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+      });
+    })();
+  </script>
+</body>
+</html>

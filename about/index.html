@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us · The Sunday Kids</title>
+  <meta name="description" content="Origin story of The Sunday Kids and our open volunteering philosophy." />
+  <link rel="icon" href="../assets/logo.png" type="image/png" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../">
+        <img src="../assets/logo.png" alt="The Sunday Kids sun logo" width="56" height="56" />
+        <span>The Sunday Kids</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../about/" aria-current="page">About Us</a>
+          <a href="../projects/">Projects</a>
+          <a href="../get-involved/">Get Involved</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <p class="kicker">About Us</p>
+        <h1 class="page-title">Who we are</h1>
+        <div class="story-grid" style="margin-top:1.5rem">
+          <article class="card">
+            <h2>Our purpose</h2>
+            <p>We are a volunteer group aimed at getting young kids involved in their communities from a young age. There are no age requirements or hour requirements — our goal is simply to provide opportunities to allow kids to help in whatever way they can.</p>
+          </article>
+          <article class="card">
+            <h2>Our story</h2>
+            <p>Turk and Nicole wanted to get their kids, Penelope, Kaia and Bodhi, more involved in their community. After searching, they found it extremely difficult to find any opportunities for their young kids, so they decided to start making them — and The Sunday Kids was born.</p>
+          </article>
+        </div>
+        <div class="cta-row" style="justify-content:flex-start;margin-top:2rem">
+          <a class="btn btn-primary" href="../get-involved/">Join us</a>
+          <a class="btn btn-secondary" href="../projects/">Browse projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="../assets/logo.png" alt="" width="48" height="48" />
+          <div>
+            <strong>The Sunday Kids</strong>
+            <p>Volunteering from the beginning.</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p><a href="mailto:info@thesundaykids.com">Email: info@thesundaykids.com</a></p>
+          <p class="social">
+            <a href="https://www.facebook.com/The-Sunday-Kids-295569818033663/" rel="noopener noreferrer" target="_blank">Facebook</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://www.instagram.com/thesundaykids/" rel="noopener noreferrer" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+      });
+    })();
+  </script>
+</body>
+</html>
